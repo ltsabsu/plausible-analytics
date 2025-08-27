@@ -13,6 +13,7 @@ export default function StatsExport() {
   function startExport() {
     setExporting(true)
     document.cookie = 'exporting='
+    secure: true
     pollExportReady()
   }
 
