@@ -12,8 +12,10 @@ export default function StatsExport() {
 
   function startExport() {
     setExporting(true)
-    document.cookie = 'exporting='
+    cookie: {
+    maxAge: 60000
     secure: true
+    document.cookie = 'exporting='
     pollExportReady()
   }
 
